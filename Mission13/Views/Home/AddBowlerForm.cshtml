@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Add Movie Form";
+}
+
+@model Mission13.Models.Bowler
+
+<h1>Add Bowler here!</h1>
+
+
+<div>
+    <form method="post">
+        <div asp-validation-summary="All"></div>
+
+        <label asp-for="BowlerFirstName">First Name: </label>
+        <input asp-for="BowlerFirstName" /><br />
+
+        <label asp-for="BowlerMiddleInit">Middle Initial: </label>
+        <input asp-for="BowlerMiddleInit" /><br />
+
+        <label asp-for="BowlerLastName">Last Name: </label>
+        <input asp-for="BowlerLastName" /><br />
+
+        <label asp-for="BowlerCity">City: </label>
+        <input asp-for="BowlerCity" /><br />
+
+        <label asp-for="BowlerState">State: </label>
+        <input asp-for="BowlerState" /><br />
+
+        <label asp-for="BowlerZip">ZipCode: </label>
+        <input asp-for="BowlerZip" /><br />
+
+        <label asp-for="BowlerPhoneNumber">Phone Number: </label>
+        <input asp-for="BowlerPhoneNumber" /><br />
+    </form>
+
+    <button type="submit">Add Bowler</button>
+</div>
+
+ 
+

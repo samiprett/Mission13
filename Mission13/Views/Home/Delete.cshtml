@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Joel Hilton's Movie Collection";
+}
+@model Bowler
+
+<h2>Are you sure you want to delete @Model.BowlerFirstName?</h2>
+
+
+<h2>Confirm Deletion</h2>
+
+<form method="post" asp-controller="Home" asp-action="Delete" asp-route-bowlerid="@Model.BowlerID">
+    <button type="submit">Delete</button>
+    @*<a asp-controller="Home" asp-action="ViewMovies" class="btn btn-primary">Cancel</a>
+    <input type="hidden" asp-for="BowlerID" />*@
+</form>
